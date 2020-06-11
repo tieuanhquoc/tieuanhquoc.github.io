@@ -1,28 +1,28 @@
 :root {
-    font-family: 'Bellota Text', cursive !important;
+  font-family: "Bellota Text", cursive !important;
 }
 
 .testimonial-card .avt {
-    width: 25vw;
-    border-radius: 50%;
-    margin-top: -19%;
-    overflow: hidden;
-    border: 5px solid #fff;
-    z-index: 2;
+  width: 25vw;
+  border-radius: 50%;
+  margin-top: -19%;
+  overflow: hidden;
+  border: 5px solid #fff;
+  z-index: 2;
 }
 
 .avt img {
-    z-index: 99 !important;
+  z-index: 99 !important;
 }
 
 .z-index-2 {
-    z-index: 2 !important;
+  z-index: 2 !important;
 }
 
 .vw3 {
-    font-size: 3vw !important;
+  font-size: 3vw !important;
 }
 
 .vw-17 {
-    font-size: 1.7vw !important;
+  font-size: 1.8vw !important;
 }
