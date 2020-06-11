@@ -1,3 +1,13 @@
-html, body, :root{
+/* html,
+body,
+ :root {
     font-family: 'Baloo 2', cursive !important;
+} */
+
+.testimonial-card .avt {
+    width: 30vw;
+    border-radius: 50%;
+    margin-top: -10%;
+    overflow: hidden;
+    border: 5px solid #fff
 }
