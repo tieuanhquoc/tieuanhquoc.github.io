@@ -1,0 +1,151 @@
+body {
+  .main {
+    // max-width: 1920px;
+    // margin: 0 auto;
+    .intro {
+      // position: fixed;
+      height: 100vh;
+      .video-fullscreen {
+        z-index: -1;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        .video-br {
+          filter: blur(3px);
+          position: absolute;
+          width: auto;
+          height: auto;
+          min-width: 100%;
+          min-height: 100%;
+          top: 50%;
+          left: 50%;
+
+          @include responsiveWidth("w") {
+            transform: translate(-30%, -50%);
+          }
+          @include responsiveWidth("w-sm") {
+            transform: translate(-35%, -50%);
+          }
+          @include responsiveWidth("w-md") {
+            transform: translate(-35%, -50%);
+          }
+          @include responsiveWidth("w-lg") {
+            transform: translate(-35%, -50%);
+          }
+          @include responsiveWidth("w-xl") {
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+      .navbar {
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        ul {
+          justify-content: center;
+          display: flex;
+          li {
+            cursor: pointer;
+            font-weight: 600;
+            padding: 10px 15px 10px 15px;
+            list-style: none;
+            a {
+              text-decoration: none;
+              color: #fff;
+            }
+            .selected {
+              color: #ffb300;
+            }
+          }
+        }
+      }
+
+      .content {
+        position: absolute;
+        top: 50%;
+        // left: 50%;
+        transform: translate(0, -50%);
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include responsiveWidth("w") {
+          flex-direction: column;
+        }
+        @include responsiveWidth("w-sm") {
+          flex-direction: row;
+        }
+        .avatar {
+          .avt {
+            border-radius: 50%;
+            border: 2px solid white;
+            transform: rotate(-10deg);
+            @include responsiveWidth("w") {
+              width: 50%;
+            }
+            @include responsiveWidth("w-sm") {
+              width: 60%;
+            }
+            @include responsiveWidth("w-lg") {
+              width: 50%;
+            }
+            @include responsiveWidth("w-xl") {
+              width: 50%;
+            }
+          }
+          @include responsiveWidth("w") {
+            width: 100%;
+            text-align: center;
+          }
+          @include responsiveWidth("w-sm") {
+            width: 40%;
+            text-align: right;
+          }
+          @include responsiveWidth("w-lg") {
+            width: 50%;
+            text-align: right;
+          }
+        }
+        .text {
+          padding: 20px;
+          .name {
+            font-size: 50px;
+            color: white;
+            @include responsiveWidth("w") {
+              text-align: center;
+              // display: block;
+            }
+            @include responsiveWidth("w-sm") {
+              text-align: left;
+              display: inline;
+            }
+          }
+          .info {
+            color: white;
+            font-size: 20px;
+            @include responsiveWidth("w") {
+              text-align: center;
+            }
+            @include responsiveWidth("w-sm") {
+              text-align: left;
+            }
+          }
+          @include responsiveWidth("w") {
+            width: 100%;
+          }
+          @include responsiveWidth("w-sm") {
+            width: 60%;
+          }
+          @include responsiveWidth("w-lg") {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .about {
+      background-color: white;
+    }
+  }
+}
