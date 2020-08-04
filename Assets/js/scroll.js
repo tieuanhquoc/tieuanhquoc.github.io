@@ -5,7 +5,7 @@
     i = function () {
       setTimeout(function () {
         o = !1;
-      }, 300);
+      }, 200);
     };
   document.addEventListener(
     "wheel",
