@@ -29,7 +29,7 @@
           return;
         r.preventDefault();
         u = e(t[--n]).offset().top;
-        (o = !0), e("html, body").animate({ scrollTop: u }, 600, i);
+        (o = !0), e("html, body").animate({ scrollTop: u }, 200, i);
       }
     },
     { passive: !1 }
