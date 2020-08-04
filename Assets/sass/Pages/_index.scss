@@ -1,13 +1,15 @@
 body {
+  background-color: rgba(0, 0, 0, 0.8);
   .main {
-    // max-width: 1920px;
-    // margin: 0 auto;
+    max-width: 1920px;
+    margin: 0 auto;
+
     .intro {
       // position: fixed;
       height: 100vh;
       .video-fullscreen {
         z-index: -1;
-        position: relative;
+        position: fixed;
         height: 100vh;
         width: 100%;
         overflow: hidden;
@@ -144,8 +146,384 @@ body {
         }
       }
     }
+    //about
     .about {
-      background-color: white;
+      height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .card {
+        width: 100%;
+        .card-body {
+          @include responsiveWidth("w") {
+            display: block;
+          }
+          @include responsiveWidth("w-md") {
+            display: flex;
+          }
+          .col {
+            padding: 0 20px 0 20px;
+          }
+          .col-3 {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+
+            @include responsiveWidth("w") {
+              h2 {
+                &::after {
+                  content: "";
+                  display: block;
+                  width: 100%;
+                  height: 3px;
+                  background: #ffb300;
+                }
+                padding: 10px 0 10px 0;
+              }
+            }
+            @include responsiveWidth("w-md") {
+              h2 {
+                &::after {
+                  display: none;
+                }
+                padding: 0;
+              }
+            }
+            @include responsiveWidth("w") {
+              width: 100%;
+              border-right: 0px;
+            }
+            @include responsiveWidth("w-md") {
+              width: 30%;
+              border-right: 2px solid #ffb300;
+            }
+          }
+          .col-7 {
+            font-size: 20px;
+            .contact {
+              padding: 10px;
+              h3 {
+                font-size: 25px;
+                font-weight: bold;
+              }
+              .detail {
+                a {
+                  text-decoration: none;
+                  color: white;
+                  padding: 5px 0 5px 10px;
+                }
+              }
+            }
+            @include responsiveWidth("w") {
+              width: 100%;
+            }
+            @include responsiveWidth("w-md") {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+    //education
+    .education {
+      height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .card {
+        width: 100%;
+        .card-body {
+          @include responsiveWidth("w") {
+            display: block;
+          }
+          @include responsiveWidth("w-md") {
+            display: flex;
+          }
+          .col {
+            padding: 0 20px 0 20px;
+          }
+          .col-3 {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+
+            @include responsiveWidth("w") {
+              h2 {
+                &::after {
+                  content: "";
+                  display: block;
+                  width: 100%;
+                  height: 3px;
+                  background: #ffb300;
+                }
+                padding: 10px 0 10px 0;
+              }
+            }
+            @include responsiveWidth("w-md") {
+              h2 {
+                &::after {
+                  display: none;
+                }
+                padding: 0;
+              }
+            }
+            @include responsiveWidth("w") {
+              width: 100%;
+              border-right: 0px;
+            }
+            @include responsiveWidth("w-md") {
+              width: 30%;
+              border-right: 2px solid #ffb300;
+            }
+          }
+          .col-7 {
+            font-size: 20px;
+            .content {
+              padding: 10px;
+              h3 {
+                font-size: 25px;
+                font-weight: bold;
+              }
+              .detail {
+                font-style: italic;
+                i {
+                  font-size: 15px;
+                }
+              }
+            }
+            @include responsiveWidth("w") {
+              width: 100%;
+            }
+            @include responsiveWidth("w-md") {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+
+    //work
+    .work {
+      height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .card {
+        width: 100%;
+        .card-body {
+          @include responsiveWidth("w") {
+            display: block;
+          }
+          @include responsiveWidth("w-md") {
+            display: flex;
+          }
+          .col {
+            padding: 0 20px 0 20px;
+          }
+          .col-3 {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+
+            @include responsiveWidth("w") {
+              h2 {
+                &::after {
+                  content: "";
+                  display: block;
+                  width: 100%;
+                  height: 3px;
+                  background: #ffb300;
+                }
+                padding: 10px 0 10px 0;
+              }
+            }
+            @include responsiveWidth("w-md") {
+              h2 {
+                &::after {
+                  display: none;
+                }
+                padding: 0;
+              }
+            }
+            @include responsiveWidth("w") {
+              width: 100%;
+              border-right: 0px;
+            }
+            @include responsiveWidth("w-md") {
+              width: 30%;
+              border-right: 2px solid #ffb300;
+            }
+          }
+          .col-7 {
+            font-size: 20px;
+            .item {
+              padding: 10px 0 10px 0;
+              h2 {
+                i {
+                  font-size: 20px;
+                }
+              }
+              span {
+                font-style: italic;
+              }
+              .content {
+                padding: 10px 0 10px 0;
+                h3 {
+                  font-size: 25px;
+                  font-weight: bold;
+                }
+                .detail {
+                  a {
+                    padding: 10px 0 10px 0;
+                  }
+                  ul {
+                    padding-left: 30px;
+                  }
+                }
+              }
+            }
+
+            @include responsiveWidth("w") {
+              width: 100%;
+            }
+            @include responsiveWidth("w-md") {
+              width: 70%;
+            }
+          }
+        }
+      }
+    }
+    //Skill
+    .skill {
+      height: 100vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .card {
+        width: 100%;
+        .card-body {
+          @include responsiveWidth("w") {
+            display: block;
+          }
+          @include responsiveWidth("w-md") {
+            display: flex;
+          }
+          .col {
+            padding: 0 20px 0 20px;
+          }
+          .col-3 {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+
+            @include responsiveWidth("w") {
+              h2 {
+                &::after {
+                  content: "";
+                  display: block;
+                  width: 100%;
+                  height: 3px;
+                  background: #ffb300;
+                }
+                padding: 10px 0 10px 0;
+              }
+            }
+            @include responsiveWidth("w-md") {
+              h2 {
+                &::after {
+                  display: none;
+                }
+                padding: 0;
+              }
+            }
+            @include responsiveWidth("w") {
+              width: 100%;
+              border-right: 0px;
+            }
+            @include responsiveWidth("w-md") {
+              width: 30%;
+              border-right: 2px solid #ffb300;
+            }
+          }
+          .col-7 {
+            font-size: 20px;
+            .content {
+              padding: 10px;
+              .item {
+                padding: 10px;
+                .progess {
+                  position: relative;
+                  width: 100%;
+                  height: 8px;
+                  background-color: blanchedalmond;
+                  border-radius: 5px;
+                  margin: 5px 0 5px 0;
+                  .bar {
+                    border-radius: 5px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    display: block;
+                  }
+                  .java {
+                    width: 80%;
+                    background-color: #e90401;
+                  }
+                  .sql {
+                    width: 85%;
+                    background-color: #2b3b58;
+                  }
+                  .c {
+                    width: 90%;
+                    background-color: #9C70D4;
+                  }
+                  .c {
+                    width: 90%;
+                    background-color: #9C70D4;
+                  }
+                  .html{
+                    width: 90%;
+                    background-color: #EA6228;
+                  }
+                }
+
+                // progress::-webkit-progress-value {
+                //   background-image:
+                //      -webkit-linear-gradient(-45deg,
+                //                              transparent 33%, rgba(0, 0, 0, .1) 33%,
+                //                              rgba(0,0, 0, .1) 66%, transparent 66%),
+                //      -webkit-linear-gradient(top,
+                //                              rgba(255, 255, 255, .25),
+                //                              rgba(0, 0, 0, .25)),
+                //      -webkit-linear-gradient(left, #09c, #f44);
+
+                //     border-radius: 2px;
+                //     background-size: 35px 20px, 100% 100%, 100% 100%;
+                // }
+              }
+            }
+            @include responsiveWidth("w") {
+              width: 100%;
+            }
+            @include responsiveWidth("w-md") {
+              width: 70%;
+            }
+          }
+        }
+      }
     }
   }
 }
