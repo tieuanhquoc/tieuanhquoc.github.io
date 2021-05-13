@@ -378,9 +378,14 @@ body {
         body .main .skill .card .card-body .col-7 {
           font-size: 20px; }
           body .main .skill .card .card-body .col-7 .content {
-            padding: 10px; }
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; }
             body .main .skill .card .card-body .col-7 .content .item {
-              padding: 10px; }
+              padding: 10px;
+              font-size: 30px; }
               body .main .skill .card .card-body .col-7 .content .item .progess {
                 position: relative;
                 width: 100%;
@@ -403,13 +408,25 @@ body {
                   background-color: #2b3b58; }
                 body .main .skill .card .card-body .col-7 .content .item .progess .c {
                   width: 90%;
-                  background-color: #9C70D4; }
+                  background-color: #9c70d4; }
                 body .main .skill .card .card-body .col-7 .content .item .progess .c {
                   width: 90%;
-                  background-color: #9C70D4; }
+                  background-color: #9c70d4; }
                 body .main .skill .card .card-body .col-7 .content .item .progess .html {
                   width: 90%;
-                  background-color: #EA6228; }
+                  background-color: #ea6228; }
+              @media screen and (min-width: 0) {
+                body .main .skill .card .card-body .col-7 .content .item {
+                  width: 100%;
+                  text-align: center; } }
+              @media screen and (min-width: 576px) {
+                body .main .skill .card .card-body .col-7 .content .item {
+                  width: 50%;
+                  text-align: center; } }
+              @media screen and (min-width: 768px) {
+                body .main .skill .card .card-body .col-7 .content .item {
+                  width: 100%;
+                  text-align: left; } }
           @media screen and (min-width: 0) {
             body .main .skill .card .card-body .col-7 {
               width: 100%; } }
